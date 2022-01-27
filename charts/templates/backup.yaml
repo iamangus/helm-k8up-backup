@@ -10,8 +10,8 @@ spec:
       name: {{ $namespace }}-repo
       key: password
     s3:
-      endpoint: {{ .Values.k8up.s3.endpoint }}
-      bucket: {{ .Values.k8up.s3.bucket }}/{{ $namespace }}
+      endpoint: {{ .Values.k8up.backup.s3.endpoint }}
+      bucket: {{ .Values.k8up.backup.s3.bucket }}/{{ $namespace }}
       accessKeyIDSecretRef:
         name: k8up-s3-creds
         key: username
