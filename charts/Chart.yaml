@@ -1,0 +1,5 @@
+apiVersion: v2
+name: "K8upSingleUse"
+version: "1.0"
+keywords:
+- k8up
