@@ -1,7 +1,3 @@
-gameServer:
-  gameType: "gamename" #lowercase
-  ports:
-    tcp: []
-    udp: []
-  serviceType: LoadBalancer
-  volume: # The file location in-pod that the persistant volume should be mounted to
+k8up:
+  backup:
+    namespaces: []
