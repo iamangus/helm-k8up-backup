@@ -5,9 +5,10 @@ metadata:
   name: k8up-{{ $namespace }}
   namespace: {{ $namespace }}
 spec:
-  repoPasswordSecretRef:
-    name: {{ $namespace }}-repo
-    key: password
+  backend:
+    repoPasswordSecretRef:
+      name: {{ $namespace }}-repo
+      key: password
   failedJobsHistoryLimit: 2
   successfulJobsHistoryLimit: 2
 {{- end }}
