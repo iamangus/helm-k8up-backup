@@ -13,10 +13,10 @@ spec:
       endpoint: {{ $.Values.k8up.backup.s3.endpoint }}
       bucket: {{ $.Values.k8up.backup.s3.bucket }}/{{ $namespace }}
       accessKeyIDSecretRef:
-        name: k8up-s3-creds
+        name: {{ $namespace }}-s3-secret
         key: username
       secretAccessKeySecretRef:
-        name: k8up-s3-creds
+        name: {{ $namespace }}-s3-secret
         key: password
   failedJobsHistoryLimit: 2
   successfulJobsHistoryLimit: 2

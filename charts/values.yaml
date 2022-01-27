@@ -4,3 +4,5 @@ k8up:
     s3:
       endpoint: ""
       bucket: ""
+      accessKey: ""
+      accessSecret: ""
