@@ -2,5 +2,5 @@ k8up:
   backup:
     namespaces: []
     s3:
-      endpoint:
-      bucket:
+      endpoint: ""
+      bucket: ""
